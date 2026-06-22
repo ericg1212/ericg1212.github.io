@@ -336,12 +336,12 @@
             <a href="https://github.com/ericg1212/agentic-rcm-pipeline" target="_blank" rel="noopener">
               Cleared: Agentic RCM Prevention Pipeline
             </a>
-            <span class="project-badge badge-live">Live &middot; Layers 1&ndash;2</span>
+            <span class="project-badge badge-live">Live</span>
           </div>
           <div class="project-desc">
             Kafka &rarr; Claude API tool-use &rarr; Snowflake &rarr; dbt.
-            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms.</span>
-            Layer 2: LLM retrieves exact LCD/NCCI policy via tool-use and returns a CARC-grounded risk score &mdash; noise injection eval proves lift over the gate alone. 10% holdout arm for provable ROI. 85 tests, CI green.
+            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms. 10% holdout arm for provable lift.</span>
+            Tiered action router: 3-condition auto-correct gate (FCA defense) &rarr; immutable audit log &rarr; kill-switch. Feedback loop compares intervention vs. holdout denial rates; &gt;20% drift activates kill-switch. 85 tests, CI green.
           </div>
         </div>
 
