@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="eVzWIsogCGkHMmEOoj4unOGnMfmTgHqXQ8mSXve-X8g" />
-  <meta name="description" content="Eric Grynspan — Data Engineer specializing in healthcare RCM, FHIR R4 pipelines, and AI enrichment. Snowflake, dbt, Dagster, AWS. New York, NY." />
+  <meta name="description" content="Eric Grynspan — Data Engineer specializing in real-time RCM prevention, Kafka streaming, Claude API tool-use, FHIR R4, and AI enrichment. Snowflake, dbt, Dagster, AWS. New York, NY." />
   <meta name="keywords" content="Eric Grynspan, Data Engineer, healthcare data, RCM, revenue cycle management, FHIR, Snowflake, dbt, Dagster, Airflow, AWS, New York" />
   <meta property="og:title" content="Eric Grynspan | Data Engineer" />
   <meta property="og:description" content="Production-grade healthcare data pipelines — RCM, FHIR R4, AI enrichment. New York, NY." />
@@ -272,10 +272,10 @@
       </div>
       <div class="role">Data Engineer &mdash; Healthcare AI &amp; Fintech</div>
       <p class="bio">
-        I design and build production-grade data infrastructure — from ingestion and transformation
-        to orchestration and AI enrichment. Current focus: revenue cycle management, FHIR R4 claims
-        analytics, and LLM-based clinical document enrichment with structured validation layers.
-        Production standards throughout: tested, monitored, and documented.
+        I build production-grade data infrastructure and real-time AI systems for healthcare. Current
+        focus: pre-submission RCM prevention — Kafka streaming, Claude API tool-use, and agentic
+        denial scoring before a claim is ever rejected. Prior work: FHIR R4 claims analytics and
+        LLM governance. Tested, documented, and defensible throughout.
       </p>
     </div>
 
@@ -293,6 +293,7 @@
         <span class="tag">Terraform</span>
         <span class="tag">FHIR R4</span>
         <span class="tag">RCM</span>
+        <span class="tag">Claude API</span>
         <span class="tag">LLM Enrichment</span>
         <span class="tag">Docker</span>
       </div>
@@ -335,12 +336,12 @@
             <a href="https://github.com/ericg1212/agentic-rcm-pipeline" target="_blank" rel="noopener">
               Cleared: Agentic RCM Prevention Pipeline
             </a>
-            <span class="project-badge badge-live">Live</span>
+            <span class="project-badge badge-live">Live &middot; Layers 1&ndash;2</span>
           </div>
           <div class="project-desc">
             Kafka &rarr; Claude API tool-use &rarr; Snowflake &rarr; dbt.
-            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms. 10% holdout arm for provable lift.</span>
-            Tiered action router: 3-condition auto-correct gate (FCA defense) &rarr; immutable audit log &rarr; kill-switch. Feedback loop compares intervention vs. holdout denial rates; &gt;20% drift activates kill-switch. 85 tests, CI green.
+            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms.</span>
+            Layer 2: LLM retrieves exact LCD/NCCI policy via tool-use and returns a CARC-grounded risk score &mdash; noise injection eval proves lift over the gate alone. 10% holdout arm for provable ROI. 85 tests, CI green.
           </div>
         </div>
 
