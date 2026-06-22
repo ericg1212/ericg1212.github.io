@@ -305,15 +305,15 @@
 
         <div class="project">
           <div class="project-header">
-            <a href="https://github.com/ericg1212/healthcare-claims-pipeline" target="_blank" rel="noopener">
-              Denied: Healthcare Claims Intelligence Pipeline
+            <a href="https://github.com/ericg1212/agentic-rcm-pipeline" target="_blank" rel="noopener">
+              Cleared: Agentic RCM Prevention Pipeline
             </a>
             <span class="project-badge badge-live">Live</span>
           </div>
           <div class="project-desc">
-            FHIR R4 &rarr; Snowflake &rarr; dbt &rarr; Dagster.
-            <span class="project-stat"><span class="hi">257K denied claims &middot; 51.9% denial rate &middot; $1.2M+ recoverable.</span></span>
-            CARC-based root-cause classification — systematic vs. documentation failures. T2D+CKD RWE cohort. 12 dbt models, 83 tests, CI green.
+            Kafka &rarr; Claude API tool-use &rarr; Snowflake &rarr; dbt.
+            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms. 10% holdout arm for provable lift.</span>
+            Tiered action router: 3-condition auto-correct gate (FCA defense) &rarr; immutable audit log &rarr; kill-switch. Feedback loop compares intervention vs. holdout denial rates; &gt;20% drift activates kill-switch. 85 tests, CI green.
           </div>
         </div>
 
@@ -333,15 +333,15 @@
 
         <div class="project">
           <div class="project-header">
-            <a href="https://github.com/ericg1212/agentic-rcm-pipeline" target="_blank" rel="noopener">
-              Cleared: Agentic RCM Prevention Pipeline
+            <a href="https://github.com/ericg1212/healthcare-claims-pipeline" target="_blank" rel="noopener">
+              Denied: Healthcare Claims Intelligence Pipeline
             </a>
             <span class="project-badge badge-live">Live</span>
           </div>
           <div class="project-desc">
-            Kafka &rarr; Claude API tool-use &rarr; Snowflake &rarr; dbt.
-            <span class="project-stat"><span class="hi">~85% of claims cleared without an LLM call</span> &mdash; deterministic NCCI gate, sub-ms. 10% holdout arm for provable lift.</span>
-            Tiered action router: 3-condition auto-correct gate (FCA defense) &rarr; immutable audit log &rarr; kill-switch. Feedback loop compares intervention vs. holdout denial rates; &gt;20% drift activates kill-switch. 85 tests, CI green.
+            FHIR R4 &rarr; Snowflake &rarr; dbt &rarr; Dagster.
+            <span class="project-stat"><span class="hi">257K denied claims &middot; 51.9% denial rate &middot; $1.2M+ recoverable.</span></span>
+            CARC-based root-cause classification — systematic vs. documentation failures. T2D+CKD RWE cohort. 12 dbt models, 83 tests, CI green.
           </div>
         </div>
 
